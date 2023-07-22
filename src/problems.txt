@@ -1,0 +1,12 @@
+> 1: Hamburger Menu on mobile devices
+    - Making Hamburger menu on mobile devices
+    
+> 2: Search Pokemon when enter is pressed 
+
+3: Animation 
+    - Pages When they open 
+    - Mobile Menu
+    - No Pokemon Found 
+
+4: Cokies banner 
+    - Disclaimer this is a school project we dont use cookeis and every media used is only used for educational purposes

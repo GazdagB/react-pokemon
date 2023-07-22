@@ -1,0 +1,32 @@
+﻿React vizsga 07.20
+
+
+Feladat:
+A feladat megoldásához a már jól ismer pokémonos API-t kell használni és ezen keresztül dolgozni. A feladat két részből épül fel, melyet egy-egy aloldalon kell megoldani és megjeleníteni.
+
+
+Első feladatrész:
+
+
+* Az asztalon hozzatok létre egy react applikációt, saját névvel ellátva (teszt-elek-vizsga).  
+* Az eddig tanultak alapján az App.js fájlban konfiguráljátok fel a react-routert, mely szükséges lesz a vizsga megoldásához.
+* A keződoldalon jelenlen meg egy pokémon logo (szabadon letölthető) és két hivatkozás, melyekkel az adott aloldalakra lehet. A logo alatt a két hivatkozás egymás mellett jelenjen meg.
+* Az első link az „Összes pokémon”, a második a „Pokémon keresése” szöveget kapja.
+* A kezdőoldalon minden elem vertikálisan és horizontálisan is legyen az oldal közepére igazítva.
+
+
+Második feladatrész:
+
+
+* Az „Összes pokémon” hivatkozásra kattintva navigáljunk el a hozzá tartozó oldalra (komponensre), ahol az API-ból visszatérő első 20 pokémon nevét és hivatkozását jelenítsétek meg egymás alatt
+* A „Pokémon keresése” hivatkozásra kattintva pedig a hozzá tartozó aloldalon (komponensben) készítsetek egy el keresőt, mely adott pokémon nevére keresve megjeleníti a pokémon képét és nevét, egymás alatt, középre igazítva
+* A kereső elkészítéséhez gomb és gomb nélküli megoldást is lehet alkalmazni (react-crypto-price mintája alapján)
+Feladat megoldásához szükséges eszközök/technológiák:
+* API: https://pokeapi.co/
+* Axios: https://axios-http.com/docs/intro
+* React Router: https://reactrouter.com/docs/en/v6
+* useState, useEffect Hookok: https://hu.reactjs.org/docs/getting-started.html
+
+
+A feladat megoldásának határideje: 2022.07.21 23:59-ig
+Mindenkinek eredményes munkát kívánok!

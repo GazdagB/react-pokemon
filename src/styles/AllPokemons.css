@@ -1,0 +1,14 @@
+.all-pokemon{
+    padding: 150px 0 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.all-pokemon h2{
+    font-size: 3rem;
+    margin-bottom: 50px;
+}
+.modal{
+    text-align: center;
+}

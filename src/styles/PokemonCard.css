@@ -1,0 +1,60 @@
+.result__container{
+    background: #fff;
+    width: 400px;
+    padding: 60px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.result__container img{
+    width: 200px;
+}
+
+.stats__hp,.stats__atk,.stats__def{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    font-size: 1.7rem;
+}
+
+.stats{
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center ;
+    align-items: center;
+}
+
+.result__container h3 {
+    font-size: 2rem;
+    margin: 20px 0;
+}
+
+.xp-wrapper{
+    background-color: #ee8329;
+    border-radius: 50%;
+    padding: 6px;
+    color: #fff;
+    font-weight: bolder;
+}
+
+.result__container p{
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.logo-xp{
+    display: flex;
+    width: 105%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-xp img{
+    width: 90px;
+    margin-right: 5px;
+}
