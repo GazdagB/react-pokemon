@@ -6,6 +6,7 @@ import { FaSearch } from 'react-icons/fa'
 import {MdOutlineCatchingPokemon} from 'react-icons/md'
 import { useNavigate } from 'react-router-dom'
 
+import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
 
 const Home = () => {
@@ -13,7 +14,11 @@ const Home = () => {
     const navigate = useNavigate();
 
   return (
-    <div className='home'>
+    <motion.div 
+    initial={{opacity: 0}}
+    animate={{opacity: 1}}
+    exit={{opacity: 0}}
+    className='home'>
         <div className='home__hero'>
             
             <img onClick={()=> navigate("/all-pokemon")} src={PokeLogo} alt="" />
@@ -30,7 +35,7 @@ const Home = () => {
                 Search Pokemons</Link>
             </div>
         </div>
-    </div>
+    </motion.div>
   )
 }
 

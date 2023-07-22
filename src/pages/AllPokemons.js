@@ -3,6 +3,8 @@ import axios from 'axios';
 import Pokemon from '../components/Pokemon';
 import '../styles/AllPokemons.css';
 
+import { motion } from 'framer-motion'
+
 const AllPokemons = () => {
   const [pokemons, setPokemons] = useState([]);
   const [images, setImages] = useState([]);
@@ -21,7 +23,11 @@ const AllPokemons = () => {
 
   
   return (
-    <div className='all-pokemon'>
+    <motion.div 
+    initial={{opacity: 0}}
+    animate={{opacity: 1}}
+    exit={{opacity: 0}}
+    className='all-pokemon'>
       <div className='modal'>
         <h2>All the Pokemons</h2>
         {
@@ -29,7 +35,7 @@ const AllPokemons = () => {
           <Pokemon key={index} name={pokemon.name} url={pokemon.url} imgUrl={images[index]} />
         ))}
       </div>
-    </div>
+    </motion.div>
   );
 };
 

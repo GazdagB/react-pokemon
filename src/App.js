@@ -9,7 +9,8 @@ import Home from './pages/Home';
 import Navbar from './components/Navbar.js';
 
 //Dependecies
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router} from 'react-router-dom';
+import AnimatedRoutes from './components/AnimatedRoutes';
 
 
 function App() {
@@ -18,11 +19,7 @@ function App() {
       <header>
         <Navbar />
       </header>
-     <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/all-pokemon" element={<AllPokemons />} />
-        <Route path="/search-pokemon" element={<SearchPokemon />} />
-     </Routes>
+      <AnimatedRoutes />
     </Router>
   );
 }

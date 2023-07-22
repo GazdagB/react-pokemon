@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import '../styles/Navbar.css'
 import Hamburger from 'hamburger-react'
 import { useEffect } from 'react'
-
+import { motion } from 'framer-motion'
 
 //Import Logo 
 import LogoText from '../images/pokemon_text.png'
@@ -69,7 +69,11 @@ const Navbar = () => {
     </div>
     
     {isOpen &&(
-        <div className="mobile__menu">
+        <motion.div 
+        initial={{opacity: 0}}
+        animate={{opacity: 1}}
+        exit={{opacity: 0}}
+        className="mobile__menu">
         <ul className={`navbar__links`}>
         <li onClick={() => setOpen(false)}>
           <FaHome className='icon-home' />
@@ -90,7 +94,7 @@ const Navbar = () => {
           <AiFillCloseCircle className='close-icon' onClick={()=> setOpen(false)}/>
         </li>
       </ul>
-        </div>
+        </motion.div>
       )}
     </>
   );

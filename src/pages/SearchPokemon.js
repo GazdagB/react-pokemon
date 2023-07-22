@@ -5,6 +5,7 @@ import { useState, useEffect } from 'react';
 import axios from 'axios';
 import PokemonCard from '../components/PokemonCard';
 import '../styles/SearchPokemon.css';
+import { motion } from 'framer-motion';
 
 import { RiLoader4Fill } from 'react-icons/ri';
 
@@ -48,7 +49,11 @@ const SearchPokemon = () => {
   };
 
   return (
-    <div className='pokemon-search'>
+    <motion.div 
+    initial={{opacity: 0}}
+    animate={{opacity: 1}}
+    exit={{opacity: 0}}
+    className='pokemon-search'>
       <div className='search__container'>
         <img src={LogoText} alt='' />
         <h1>Search for a pokemon!</h1>
@@ -113,7 +118,7 @@ const SearchPokemon = () => {
 
 
       }
-    </div>
+    </motion.div>
   );
 };
 
