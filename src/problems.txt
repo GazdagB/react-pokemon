@@ -3,10 +3,16 @@
     
 > 2: Search Pokemon when enter is pressed 
 
-3: Animation 
+> 3: Animation 
     - Pages When they open 
     - Mobile Menu
     - No Pokemon Found 
 
-4: Cokies banner 
+    Make the animation look better 
+
+> 4: Cokies banner 
     - Disclaimer this is a school project we dont use cookeis and every media used is only used for educational purposes
+
+5: Responsivity 
+    -All pokemons page Responsivity 
+    -Search pokemons page Responsivity

@@ -24,9 +24,10 @@ const AllPokemons = () => {
   
   return (
     <motion.div 
-    initial={{opacity: 0}}
-    animate={{opacity: 1}}
-    exit={{opacity: 0}}
+    initial={{x: '-100vw'}}
+    animate={{x: 0}}
+    exit={{x: '100vw'}}
+    transition={{duration: 0.3}}
     className='all-pokemon'>
       <div className='modal'>
         <h2>All the Pokemons</h2>

@@ -15,9 +15,10 @@ const Home = () => {
 
   return (
     <motion.div 
-    initial={{opacity: 0}}
-    animate={{opacity: 1}}
+    initial={{width: 0}}
+    animate={{width: "100vw"}}
     exit={{opacity: 0}}
+    transition={{duration: 0.3}}
     className='home'>
         <div className='home__hero'>
             
